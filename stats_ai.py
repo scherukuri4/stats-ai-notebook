@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1ieODzPNiBmI79oce4E0oZ55DbM6mK_Qq
 """
 
-!pip install -q streamlit google-generativeai matplotlib
+
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%writefile app.py
