@@ -250,11 +250,11 @@ genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 from pyngrok import conf, ngrok
 
 
-conf.get_default().auth_token = "2zmhVTSP7zWB68RY2tlTv01rhEh_6moAou8cDu8n1j4f2mFjr"
+import os
+conf.get_default().auth_token = os.getenv("STREAMLIT_AUTH_TOKEN")
 
-!nohup streamlit run app.py --server.enableCORS false --server.enableXsrfProtection false > /dev/null 2>&1 &
 
-ngrok.kill()
+
 
 from pyngrok import ngrok
 public_url = ngrok.connect(8501)
