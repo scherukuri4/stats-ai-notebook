@@ -18,7 +18,8 @@ Original file is located at
 # import ast
 # 
 # # Set up Gemini API key
-# genai.configure(api_key="AIzaSyAP0SnbCFRIWkoN1AaoHYw4gW_qjRt_aUY")
+# import os
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 # 
 # # -----------------------------
 # # Distribution Functions
