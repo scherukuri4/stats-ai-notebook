@@ -248,12 +248,7 @@ genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
 
 from pyngrok import conf, ngrok
-
-
-import os
-conf.get_default().auth_token = os.getenv("STREAMLIT_AUTH_TOKEN")
-
-
+conf.get_default().auth_token = st.secrets["NGROK_AUTH_TOKEN"]
 
 
 from pyngrok import ngrok
