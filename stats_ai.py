@@ -18,8 +18,8 @@ Original file is located at
 # import ast
 # 
 # # Set up Gemini API key
-# import os
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+import streamlit as st
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 # 
 # # -----------------------------
 # # Distribution Functions
