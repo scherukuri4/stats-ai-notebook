@@ -246,7 +246,7 @@ genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 #         st.exception(e)
 #
 
-!pip install pyngrok
+
 from pyngrok import conf, ngrok
 
 
